@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML bersama Arkademi</title>
+    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if(x == ''){
+                alert('Nama harus diisi ya...');
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Hari ini Belajar HTML -->
+    <h1>Pelatihan yang Lengkap dan Relevan untuk Pekerja Indonesia</h1>
+    <a href="https://prakerja.arkademi.com/">Prakerja</a><br>
+    Bermitra dengan lembaga pemerintah sebagai penyedia layanan pelatihan kartu prakerja untuk menciptakan angkatan kerja Indonesia yang siap kerja.<br>
+    <b>Bermitra dengan lembaga pemerintah sebagai penyedia layanan pelatihan kartu prakerja untuk menciptakan angkatan kerja Indonesia yang siap kerja.</b><br>
+    <i>Beli di Marketplace Pilihanmu</i>
+    <br>
+    <img src="https://i.pinimg.com/736x/98/982a0f39a174e4ce4f4e9c1b755aaec9.jpg" alt="background-bunga" /><br>
+    <mark>Arkademi adalah Lembaga Kursus dan Pelatihan resmi berlisensi dari Kementerian Pendidikan, Kebudayaan, Riset, dan
+    Teknologi RI</mark>
+
+    <form name="myForm" onsubmit="return validateForm()">
+        Name: <input type="text" name="fname" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

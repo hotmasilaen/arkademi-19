@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript bersama dengan Arkademi</title>
+</head>
+<body>
+    <p id="root">Hari ini belajar JavaScript</p>
+    <p id="element-2"></p>
+    <script>
+        // contoh variable
+        const nama = 'Farhan';
+        const Nama = 'Nike';
+        const NaMa = 'Joy ';
+        let alamat = 'Jakarta';
+        alamat = 'Medan';
+        const data_siswa = 'Merah';
+
+        // untuk melihat output js
+        const kalimatRoot = document.getElementById('root').innerHTML;
+        console.log('kalimatRoot: ', kalimatRoot); //1
+        // alert(kalimatRoot); // 2
+        const kalimatKedua = 'Hari ini belajar JavaScript basic';
+        document.getElementById('element-2').innerHTML = kalimatKedua // 3
+
+        const num = 1500; //number
+        const num2 = '100'; // string
+        const hasil = num + num2;
+        console.log('Hasil: ', hasil);
+
+        const hargaBarang = 479.940;
+        const discount = 23.998;
+        const totalBayar = hargaBarang - discount
+        console.log('Total Bayar: ', totalBayar);
+
+        const currentUserName = 'hotmasilaen';
+        const existUserName = 'hotmasilaen38';
+        console.log('is user name match?: ', currentUserName == existUserName);
+
+        
+        const value1 = 'hotmasilaen';
+        const value2 = 'hotmasilaen';
+        console.log('is value identical?: ', value1 === value2);
+
+        const value3 = '12';
+        const value4 = '14';
+        console.log('is value identical?: ', value3 != value4);
+
+        const value5 = 123;
+        const value6 = 123;
+        console.log('is value not-identical?: ', value5 !== value6);
+
+        const noHp = '08222222222';
+        console.log(noHp.slice(0, 1));
+        console.log(noHp.replace('0', '+62'));
+
+        for(var i = 1; i <= 5; i++){
+            console.log('Number: ', i);
+        }
+
+    </script>
+</body>
+</html>
